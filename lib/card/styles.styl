@@ -1,0 +1,49 @@
+.Card
+    test()
+    box-shadow 0 0 10px rgba(black,.5)
+    cursor pointer
+    transform translate3d(0,0,0) 
+    transition .3s
+    width 180px
+    &--antagonist
+        .Card-container
+            backface-visibility hidden
+            transform rotateY(180deg)
+    
+        .Card-backface
+            transform rotateY(0)
+    &--player
+        width 250px
+        &:hover
+            transform translate3d(0,-50px,0) 
+    &-backface
+        backface-visibility hidden
+        transform rotateY(180deg)
+        position absolute
+        left 0 
+        right 0
+        top 0
+        bottom 0
+        background-image url('../images/oculto.jpg')
+        background-size 100%
+        background-repeat no-repeat
+        background-position center
+    &-name
+        margin 0 0 .5em
+        font-size .8em
+        color white
+        text-transform uppercase
+        
+    &-image
+        width 100%
+    &-description
+        background white
+        font-size .5em
+        margin-bottom .5em
+    &-attack
+        font-size .5em
+        float right
+        color white
+        background black
+        padding .5em
+        

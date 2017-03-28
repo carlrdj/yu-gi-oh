@@ -1,0 +1,27 @@
+section(class="Layout")
+    section(class="Layout-antagonist")
+        - clase = "Card--antagonist"
+        include ../card/2.jade
+    section(class="Layout-main")
+        div(class="Layout-status")
+            - name = "Computer"
+            include ../status/template.jade
+            - name = "Carl.rdj"
+            include ../status/template.jade
+
+        div(class="Layout-battle")
+            div(class="Layout-battleColumn")
+                - clase = ""
+                div(class="Layout-battleRow")
+                    include ../card/2-d.jade
+                div(class="Layout-battleRow")
+                    include ../card/1-d.jade
+                
+        div(class="Layout-phases")
+            - text = "Ohhh! que buen ataque, le bajaste 345 puntos"
+            include ../phase/template.jade
+
+
+    section(class="Layout-player")
+        - clase = "Card--player"
+        include ../card/1.jade
